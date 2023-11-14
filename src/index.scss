@@ -1,0 +1,10 @@
+/* abstracs */
+@use './scss/abstracs/variables.scss';
+@use './scss/abstracs/mixins.scss';
+
+
+/* base */
+@use './scss/base/base.scss';
+@use './scss/base/resets.scss';
+/*Bootstrap*/
+@import "bootstrap/scss/bootstrap";
