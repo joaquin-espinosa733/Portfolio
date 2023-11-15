@@ -1,3 +1,8 @@
 html, body {
-    font-family: var(--font-poppins);
+    font-family: var(--font-libre-baskerville);
+}
+
+::selection{
+    background-color: #4affff;
+    color: #1e93f3;
 }

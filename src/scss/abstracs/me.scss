@@ -1,0 +1,77 @@
+.count {
+    color: var(--ptf-text-color);
+    background-color: var(--ptf-container-color);
+}
+
+.container-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.botones {
+    width: 7rem;
+    height: 50px;
+    border-image: linear-gradient(235deg, #4affff 0, #1e93f3 50%, #00274c 100%);
+    border-style: solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    background-color: transparent;
+    font-weight: bold;
+    transition: background-size ease;
+    background-size: 100% 0;
+    background-position: top;
+}
+
+.botones:hover {
+    background-image: linear-gradient(235deg, #4affff 0, #1e93f3 50%, #00274c 100%);
+    color: white;
+    background-size: 100% 100%;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tamaño {
+    font-size: 4rem;
+    font-family: var(--font-libre-baskerville);
+    font-weight: 600;
+}
+
+.animate-text {
+    animation: slideFromLeft 1.5s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#me {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    bottom: 0;
+}
+
+.spanes {
+    background-image: linear-gradient(235deg, #4affff 0, #1e93f3 50%, #00274c 100%);
+    -webkit-background-clip: text;
+    /* Clip para navegadores WebKit (Safari, Chrome, etc.) */
+    background-clip: text;
+    /* Clip para otros navegadores */
+    color: transparent;
+}
