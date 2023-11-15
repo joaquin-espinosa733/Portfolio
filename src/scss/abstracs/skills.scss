@@ -1,0 +1,21 @@
+.container-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconss {
+    margin-right: 10px;
+}
+
+#skills {
+    /* Estilos iniciales */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* Transición de opacidad */
+}
+
+#skills.scroll-activo {
+    /* Estilos aplicados cuando la clase scroll-activo está presente */
+    opacity: 1;
+    background-image: linear-gradient(235deg, #4affff 0, #1e93f3 50%, #00274c 100%);
+}
