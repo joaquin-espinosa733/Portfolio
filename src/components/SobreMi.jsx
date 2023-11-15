@@ -1,6 +1,27 @@
+import { useEffect } from "react";
 import yo from "../assets/img/me.jpeg";
 
 function SobreMi() {
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const sobremiSection = document.getElementById("sobremi");
+        if (sobremiSection) {
+            const sobremiTop = sobremiSection.offsetTop;
+            if (scrollY > sobremiTop - window.innerHeight + 100) {
+                sobremiSection.classList.add("scroll-activo");
+            } else {
+                sobremiSection.classList.remove("scroll-activo");
+            }
+        }
+    };
     return (
         <section id="sobremi">
             <div className="container todo">
