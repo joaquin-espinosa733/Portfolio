@@ -1,31 +1,38 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import yo from "../assets/img/me.jpeg";
 
 function SobreMi() {
 
+    const [hasAnimated, setHasAnimated] = useState(false);
+
     useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const sobremiSection = document.getElementById("sobremi");
+            const h1Element = document.querySelector("#sobremi h1.text");
+
+            if (sobremiSection && h1Element && !hasAnimated) {
+                const sobremiTop = sobremiSection.offsetTop;
+                if (scrollY > sobremiTop - window.innerHeight + 100) {
+                    sobremiSection.classList.add("scroll-activo");
+                    h1Element.classList.add("animate-text");
+                    setHasAnimated(true); // Establecer hasAnimated a true para evitar más animaciones
+                }
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
 
-    const handleScroll = () => {
-        const scrollY = window.scrollY;
-        const sobremiSection = document.getElementById("sobremi");
-        if (sobremiSection) {
-            const sobremiTop = sobremiSection.offsetTop;
-            if (scrollY > sobremiTop - window.innerHeight + 100) {
-                sobremiSection.classList.add("scroll-activo");
-            } else {
-                sobremiSection.classList.remove("scroll-activo");
-            }
-        }
-    };
+
+
     return (
         <section id="sobremi">
             <div className="container todo">
-                <div className="text">
+                <div className="text animate-text">
                     <h1 className="text">ACERCA DE MI</h1>
                 </div>
                 <div className="content">

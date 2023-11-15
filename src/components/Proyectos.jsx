@@ -1,6 +1,10 @@
 function Proyectos() {
   return (
-    <div>Proyectos</div>
+    <section id="proyectos">
+      <div>
+        <h1>MIS PROYECTOS</h1>
+      </div>
+    </section>
   )
 }
 
