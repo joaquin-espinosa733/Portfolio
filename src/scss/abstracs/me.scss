@@ -44,13 +44,28 @@
 }
 
 .animate-text {
-    animation: slideFromLeft 1.5s ease-in-out;
+    animation: slideFromLeft 1.0s ease-in-out;
 }
 
 @keyframes slideFromLeft {
     0% {
         opacity: 0;
-        transform: translate(-100%);
+        transform: translate(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.animate-text2 {
+    animation: slideFromTop 1.0s ease-in-out;
+}
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translate(20%);
     }
 
     100% {

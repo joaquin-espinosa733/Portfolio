@@ -10,13 +10,23 @@ function SobreMi() {
             const scrollY = window.scrollY;
             const sobremiSection = document.getElementById("sobremi");
             const h1Element = document.querySelector("#sobremi h1.text");
+            const imageContainer = document.querySelector("#sobremi img.imagen-container");
+            const parrafos = document.querySelectorAll("#sobremi .parr");
+            const buttons = document.querySelectorAll("#sobremi .botones2");
 
             if (sobremiSection && h1Element && !hasAnimated) {
                 const sobremiTop = sobremiSection.offsetTop;
                 if (scrollY > sobremiTop - window.innerHeight + 100) {
                     sobremiSection.classList.add("scroll-activo");
                     h1Element.classList.add("animate-text");
-                    setHasAnimated(true); // Establecer hasAnimated a true para evitar más animaciones
+                    imageContainer.classList.add("animate-imagen");
+                    parrafos.forEach((paragraph) => {
+                        paragraph.classList.add("animate-text2");
+                    });
+                    buttons.forEach((button) => {
+                        button.classList.add("animate-text2");
+                    });
+                    setHasAnimated(true);
                 }
             }
         };
@@ -29,6 +39,7 @@ function SobreMi() {
 
 
 
+
     return (
         <section id="sobremi">
             <div className="container todo">
@@ -37,7 +48,7 @@ function SobreMi() {
                 </div>
                 <div className="content">
                     <div className="imagen-container">
-                        <img src={yo} alt="yo" width={300} height={450} className="imagen" />
+                        <img src={yo} alt="yo" width={300} height={450} className="imagen-container" />
                     </div>
                     <div className="par-bot">
                         <p className="parr">

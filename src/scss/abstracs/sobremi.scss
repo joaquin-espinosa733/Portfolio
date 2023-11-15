@@ -10,7 +10,7 @@
 .text {
     text-align: center;
     font-family: var(--font-libre-baskerville);
-    font-weight: 800;
+    font-weight: 750;
     padding-bottom: 15px;
 }
 
@@ -22,11 +22,39 @@
 
 .imagen-container {
     margin-right: 20px;
+    perspective: 1000px;
+    transition: transform 2s;
 }
 
-// .imagen {
-//     border-radius: 60%;
-// }
+.imagen-container:hover {
+    transform: scale(1.05);
+}
+
+.imagen-container2 {
+    transition: transform 2s;
+}
+
+.imagen-container2:hover {
+    transform: scale(1.05);
+}
+
+
+.animate-imagen {
+    animation: slideFromBottom 1.0s ease-in-out;
+}
+
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .par-bot {
     display: flex;
