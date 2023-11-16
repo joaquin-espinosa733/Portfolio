@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import yo from "../assets/img/me.jpeg";
+import yo from "../assets/img/youp.jpeg";
 
 function SobreMi() {
 
@@ -48,7 +48,7 @@ function SobreMi() {
                 </div>
                 <div className="content">
                     <div className="imagen-container">
-                        <img src={yo} alt="yo" width={300} height={450} className="imagen-container" />
+                        <img src={yo} alt="yo" width={300} height={400} className="imagen-container" />
                     </div>
                     <div className="par-bot">
                         <p className="parr">
