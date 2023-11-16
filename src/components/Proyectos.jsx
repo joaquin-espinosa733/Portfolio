@@ -26,7 +26,7 @@ function Proyectos() {
                 <img src={countries} alt="" width={700} className="imagen-container2" />
               </a>
               <br />
-              <a href="https://github.com/joaquin-espinosa733/PI_countries">
+              <a target="__blank" href="https://github.com/joaquin-espinosa733/PI_countries">
                 <button className="botones">Repositorio</button>
               </a>
               <br />
