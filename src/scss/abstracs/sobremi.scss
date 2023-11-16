@@ -23,6 +23,9 @@
     min-height: 50vh;
 }
 
+
+
+
 .text {
     text-align: center;
     font-family: var(--font-libre-baskerville);
@@ -43,6 +46,20 @@
     font-family: var(--font-libre-baskerville);
     font-weight: 750;
 }
+
+.text4 {
+    text-align: center;
+    font-family: var(--font-libre-baskerville);
+    font-weight: 750;
+    padding-bottom: 15px;
+    color: #00274c;
+    transition: color 0.5s ease;
+}
+
+.text4:hover{
+    color: #1e93f3;
+}
+
 
 .content {
     display: flex;

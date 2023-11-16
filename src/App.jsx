@@ -1,4 +1,6 @@
 import './App.scss';
+import Contacto from './components/Contacto';
+import Footer from './components/Footer';
 import Me from './components/Me';
 import Proyectos from './components/Proyectos';
 import Skills from './components/Skills';
@@ -14,6 +16,8 @@ function App() {
         <SobreMi />
         <Proyectos />
         <Skills />
+        <Contacto />
+        <Footer />
       </div>
     </>
   )
