@@ -148,3 +148,9 @@
     opacity: 1;
     background-image: linear-gradient(235deg, #4affff 0, #1e93f3 50%, #00274c 100%);
 }
+
+@media screen and (max-width: 767px) {
+    #sobremi.scroll-activo {
+        min-height: auto; /* Cambiar la altura mínima a "auto" */
+    }
+}
