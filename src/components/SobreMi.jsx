@@ -57,7 +57,7 @@ function SobreMi() {
                         <p className="parr">
                             Estoy comprometido con mi crecimiento profesional continuo,<br /> y siempre estoy en busca de oportunidades para enfrentar desafíos más grandes<br /> y emocionantes en el mundo del desarrollo web backEnd,FrontEnd o FullStack.
                         </p>
-                        <div>
+                        <div className="botones-container">
                             <a target="__blank" href="https://www.linkedin.com/in/joaquin-espinosa/"><button type="button" className="botones2">Linkedin</button></a><br /><br />
                             <a target="__blank" href="https://drive.google.com/file/d/1IVlYdURUl6MNEap3uFOeIQPK69tUvXN1/view?usp=sharing"><button className="botones2" style={{ width: "150px" }}>Descargar CV</button></a>
                         </div>

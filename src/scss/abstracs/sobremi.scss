@@ -56,7 +56,7 @@
     transition: color 0.5s ease;
 }
 
-.text4:hover{
+.text4:hover {
     color: #1e93f3;
 }
 
@@ -69,7 +69,7 @@
 
 .imagen-container {
     margin-right: 20px;
-    perspective: 1000px;
+    // perspective: 1000px;
 }
 
 .imagen-container2 {
@@ -136,6 +136,7 @@
     color: #00274c;
 }
 
+
 #sobremi {
     /* Estilos iniciales */
     opacity: 0;
@@ -151,6 +152,55 @@
 
 @media screen and (max-width: 767px) {
     #sobremi.scroll-activo {
-        min-height: auto; /* Cambiar la altura mínima a "auto" */
+        min-height: auto;
+        /* Cambiar la altura mínima a "auto" */
+    }
+
+    .container.todo {
+        padding: 20px;
+        /* Agregar un espacio alrededor del contenido en dispositivos móviles */
+    }
+
+    .content {
+        flex-direction: column;
+        /* Cambiar la dirección a columna */
+        align-items: center;
+        /* Centrar los elementos */
+        text-align: center;
+        /* Alinear el texto al centro */
+    }
+
+    .imagen-container {
+        margin-right: 0;
+        /* Eliminar el margen derecho en dispositivos móviles */
+    }
+
+    .par-bot {
+        align-items: center;
+        margin-top: 20px;
+        /* Agregar espacio entre la imagen y los párrafos */
+    }
+
+    .botones2 {
+        width: 150px;
+        /* Ancho de los botones */
+        margin-top: 20px;
+        /* Agregar espacio entre los párrafos y los botones */
+    }
+
+    .parr {
+        font-weight: 500;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0;
+        /* Eliminar el margen izquierdo del texto */
+        text-align: center;
+    }
+
+    .imagen-container2 {
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+        height: auto;
+        /* Ajusta la altura automáticamente para mantener la proporción */
     }
 }
