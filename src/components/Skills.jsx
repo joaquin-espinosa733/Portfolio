@@ -56,7 +56,7 @@ function Skills() {
                     <div style={{ fontSize: "2rem" }} className="container-icons">
                         <div className="iconss" >
                             <SiReact className="iconss" style={{ marginLeft: "10px" }} />
-                            <p className="parr">react</p>
+                            <p className="parr">React</p>
                         </div>
                         <div className="iconss" >
                             <SiRedux className="iconss" style={{ marginLeft: "10px" }} />
