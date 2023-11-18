@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer className="container-footer">
             <div className="container todo3">
-                <a href="#"><img src={flechaArriba} alt="" width={30} /></a>
+                <a href="#"><img src={flechaArriba} alt="" width={30} className="flecha"/></a>
                 <br />
                 <div style={{ fontSize: "40px" }}>
                     <a
@@ -20,7 +20,7 @@ function Footer() {
                     <a
                         target="__blank"
                         href="https://www.linkedin.com/in/joaquin-espinosa/">
-                        <FaLinkedin style={iconStyle} />
+                        <FaLinkedin style={iconStyle}/>
                     </a>
                 </div>
                 <div>

@@ -44,7 +44,7 @@ function Proyectos() {
           </div>
         </div>
         <br />
-        <a href="#skills" onClick={skills}><img src={flecha} alt="" width={20} height={20} /></a>
+        <a href="#skills" onClick={skills}><img src={flecha} alt="" width={20} height={20} className="flecha2"/></a>
       </div>
       <br />
       <br />
