@@ -20,7 +20,7 @@ function Proyectos() {
           <div>
             <div className="par-bot">
               <h3 className="text2">Countries</h3>
-              <p className="parr2">Proyecto sobre todos los paises, que permite al usuario buscar el pais, poder filtrarlos por continentes, orden alfabetico, segun la cantidad de la poblancion de mayor a menor y de menor a mayor y poder crear actividades para el pais que elija el usuario y despues filtrar los paises que tienen una actividad
+              <p className="parr2">Proyecto sobre todos los países que permite al usuario buscar el país, poder filtrarlos por continentes, orden alfabético, según la cantidad de población de mayor a menor y de menor a mayor, y poder crear actividades para el país que elija el usuario. Después, se pueden filtrar los países que tienen una actividad.
               </p><p className="parr2">Tecnoligias utilizadas:</p>
               <div className="tecnologias">
                 <span className="badge text-bg-primary" style={{ marginRight: "5px" }}>Javascript</span>
@@ -45,7 +45,7 @@ function Proyectos() {
           </div>
           <div className="par-bot">
             <h3 className="text2">XUL-SOLAR</h3>
-            <p className="parr2">SPA(single page aplication) en la que podes crear un usuario, recuperar contraseña, gestionar la reserva de actividades, realizar donaciones con mercado pago, investigar sobre Xul Solar, y gestionar todas las funcionalidades de la pagina con un perfil de administrador.</p><p className="parr2">Tecnoligias utilizadas:</p>
+            <p className="parr2">SPA (aplicación de una sola página) en la que puedes crear un usuario, recuperar contraseña, gestionar la reserva de actividades, realizar donaciones con Mercado Pago, investigar sobre Xul Solar y gestionar todas las funcionalidades de la página con un perfil de administrador.</p><p className="parr2">Tecnologias utilizadas:</p>
             <div className="tecnologias">
               <span className="badge text-bg-primary" style={{ marginRight: "5px" }}>Javascript</span>
               <span className="badge text-bg-primary" style={{ marginRight: "5px" }}>React</span>

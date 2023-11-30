@@ -59,7 +59,7 @@ function SobreMi() {
                         </p>
                         <div className="botones-container">
                             <a target="__blank" href="https://www.linkedin.com/in/joaquin-espinosa/"><button type="button" className="botones2">Linkedin</button></a><br /><br />
-                            <a target="__blank" href="https://drive.google.com/file/d/1IVlYdURUl6MNEap3uFOeIQPK69tUvXN1/view?usp=sharing"><button className="botones2" style={{ width: "150px" }}>Descargar CV</button></a>
+                            <a target="__blank" href="https://drive.google.com/file/d/1U1sk4PK6bzXH7fag3fyhhbV_cVbDHagj/view?usp=sharing"><button className="botones2" style={{ width: "150px" }}>Descargar CV</button></a>
                         </div>
                     </div>
                 </div>
