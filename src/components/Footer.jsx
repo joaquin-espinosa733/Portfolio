@@ -1,5 +1,5 @@
 import flechaArriba from "../assets/img/flecha-hacia-arriba.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 function Footer() {
     const iconStyle = {
@@ -20,7 +20,12 @@ function Footer() {
                     <a
                         target="__blank"
                         href="https://www.linkedin.com/in/joaquin-espinosa/">
-                        <FaLinkedin style={iconStyle}/>
+                        <FaLinkedin style={{ ...iconStyle, marginRight: "50px" }}/>
+                    </a>
+                    <a
+                        target="__blank"
+                        href="https://www.tiktok.com/@joaquin__esp?is_from_webapp=1&sender_device=pc">
+                        <FaTiktok style={iconStyle}/>
                     </a>
                 </div>
                 <div>
